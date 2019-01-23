@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+}
+
+.bg-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: block;
+    background-image: url("background.jpeg");
+    background-color: #888;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
+    z-index: 1; 
+}
+
+.container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(200,200,200,0.8);
+    z-index: 2;
+}
+
+.vcard {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 50px;
+}
+
+#about {
+    padding: 30px;
+    text-align: left;
+}
+
+aside, img {
+    width: 150px;
+}
+
+ul {
+    list-style-type: none;
+}
