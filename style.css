@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     max-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .bg-image {
@@ -26,7 +27,7 @@ body {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 70%;
+    width: 80%;
     height: auto;
     text-align: center;
     margin: auto;
@@ -37,6 +38,12 @@ body {
 .vcard {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 5px 7px 10px #444;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 section {
@@ -45,15 +52,66 @@ section {
     margin: 50px;
 }
 
-#about {
-    padding: 30px;
+.about {
+    display: flex;
+    flex-direction: column;
     text-align: left;
+    background-color: #ddd;
+    padding: 10px;
+    box-shadow: 3px 5px 10px #555;
+}
+
+.about h2 {
+    margin-left: 30px;
+}
+
+.about-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-item p {
+    margin: 10px;
+}
+
+.about-item i {
+    color: #555;
+}
+
+.about-item a, a:visited {
+    color: #000;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ddd;
+    box-shadow: -3px 0 10px #555;
 }
 
 aside, img {
     width: 150px;
 }
 
-ul {
-    list-style-type: none;
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.social a {
+    padding: 15px;
 }
