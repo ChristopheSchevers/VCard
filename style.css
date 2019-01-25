@@ -55,7 +55,7 @@ a:hover {
     font-size: 1.2em;
 }
 
-section {
+main {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin: 50px;
@@ -123,5 +123,5 @@ aside, img {
 }
 
 .social a {
-    padding: 15px;
+    padding: 30px;
 }
